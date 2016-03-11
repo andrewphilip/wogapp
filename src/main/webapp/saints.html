@@ -1,0 +1,72 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="page-header">
+						<h3>Saints-Grid</h3>
+						(Sortable fields:[Name,Feast])
+					</div>
+					
+						<div style="float:right;">
+										<ul class="pagination">
+											<li ng-class="disablePrevPage()">
+												<a ng-click="prevPage()">&laquo; Prev </a>
+											</li>
+											<li ng-repeat="i in range()" ng-class="{active: i == curPage}" ng-click="setPage(i)">
+												<a >{{i+1}}</a>
+											</li>
+											<li ng-class="disableNextPage()">
+												<a ng-click="nextPage()">Next&raquo;</a>
+											</li>
+										</ul>
+						</div>
+						
+					<!-- div class="table-responsive" style="max-height:500px;overflow: auto;"  table-bordered-->
+						<table class="table  table-striped" fixed-header>
+							<thead>
+								<tr>
+									<th class="col-xs-2 btn btn-info" ng-click="doSort('name')">Name</th>
+									<th class="col-xs-1">Year of Birth</th>
+									<th class="col-xs-1">Year of Death</th>
+									<th class="col-xs-1 btn btn-info" ng-click="doSort('feast')">Feast</th>
+									<th class="col-xs-2">Canonized</th>
+									<th class="col-xs-3">Short-Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="s in saintsArr | offset:curPage * itemsPerPage | limitTo:itemsPerPage |orderBy:sort:toggle" bs-popover>
+									<td class="col-xs-2">{{s.name}}</td>
+									<td class="col-xs-1">{{s.born}}</td>
+									<td class="col-xs-1">{{s.died}}</td>
+									<td class="col-xs-1">{{s.feast}}</td>
+									<td class="col-xs-2">{{s.canonized}}</td>
+									<td class="col-xs-3">{{s.comments | substring:0:50}}...
+										<a  class="btn btn-primary btn-xs" rel="popover" data-content="{{s.comments}}" data-original-title="{{s.name}}">View</a>						
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div style="float:right;" >
+										<ul class="pagination">
+											<li ng-class="disablePrevPage()">
+												<a ng-click="prevPage()">&laquo; Prev </a>
+											</li>
+											<li ng-repeat="i in range()" ng-class="{active: i == curPage}" ng-click="setPage(i)">
+												<a >{{i+1}}</a>
+											</li>
+											<li ng-class="disableNextPage()">
+												<a ng-click="nextPage()">Next&raquo;</a>
+											</li>
+										</ul>
+						</div>
+						
+					<!-- /div -->
+				</div>
+			</div>						
+					
+		</div>
+
+	</div>
+</div>

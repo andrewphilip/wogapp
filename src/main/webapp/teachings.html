@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="page-header">
+						<h3>Teachings</h3>
+					</div>
+					<div>
+						<ul>
+							<li><a ng-click="loadCont('covenant.html')">Covenant</a></li>
+							<li><a ng-click="loadCont('eucharist.html')">Eucharist</a></li>
+							<li><a ng-click="loadCont('beatitude.html')">Beatitudes</a></li>
+							<li><a ng-click="loadCont('materdei.html')">Mary, Mother of God</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8" id="contentpnl" ng-bind-html="pnldata">
+			<span us-spinner spinner-key="spinner-1"></span>
+		</div>
+
+	</div>
+</div>

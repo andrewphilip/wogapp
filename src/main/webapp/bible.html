@@ -1,0 +1,67 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="page-header">
+						<h3>Books of the Bible</h3>
+					</div>
+					<div>
+							<div>
+							Book:<select ng-model="selBook" ng-options="bk.name for bk in books" ng-change="onchgbook();">
+								<option value="">--Select--</option>
+							</select>
+							</div>
+							<br>
+							<div ng-show="chapsarr">
+								Chapter:<select  ng-model="selChap" ng-options="chap for chap in chapsarr" ng-change="onchgchap();">
+									<option value="">--Select--</option>
+								</select>
+							</div>
+							<br>
+							<hr>
+							<div>
+								<p>Search by key-text in the bible: <input ng-model="srchTxt">
+								<a class="btn btn-primary btn-xs"  ng-click="search()">Go</a>
+								</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8" id="contentpnl" ng-hide="srchresult">
+				<h4>{{selBook.name}}</h4>
+				<div ng-show="showSrch" style="text-align: right;">Search:&nbsp;<input ng-model="searchTxt"></div>
+				<div ng-repeat="b in book | filter: searchTxt | orderBy:['chapter','verse']  as wog track by $index">
+					<hr ng-show="b.chapter != wog[$index-1].chapter">
+					<p ng-show="b.chapter != wog[$index-1].chapter" style="font-weight:bold;">
+						Chapter {{b.chapter}}
+					</p>
+					<hr ng-show="b.chapter != wog[$index-1].chapter">
+					<span style="font-style:'italic';font-weight:'bold';">[{{b.verse}}]</span>&nbsp;
+					<span  ng-bind-html="b.text | highlight:searchTxt">{{b.text}}</span>
+					
+				</div>
+				<br>
+				<div ng-show="showLoad">
+						<span us-spinner></span>
+				</div>
+		</div>
+		<div class="col-md-8" id="contentpnl" ng-show="srchresult">
+				<h4>Search result yielded {{srchrescount}} reference(s).</h4>
+				<div ng-repeat="b in book | orderBy:['book','chapter','verse']  as wog track by $index">
+					<hr ng-show="b.chapter != wog[$index-1].chapter">
+					<p ng-show="b.chapter != wog[$index-1].chapter" style="font-weight:bold;">
+						{{b.book | uppercase}} - Chapter {{b.chapter}}
+					</p>
+					<hr ng-show="b.chapter != wog[$index-1].chapter">
+					<span style="font-style:'italic';font-weight:'bold';">[{{b.verse}}]</span>&nbsp;<span  ng-bind-html="b.text | highlight:srchTxt">{{b.text}}</span>
+				</div>
+				<br>
+				<div ng-show="showLoad">
+						<span us-spinner></span>
+				</div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,57 @@
+<div class="container">
+	<div class="row">
+
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h4>Video List</h4>
+
+					<h6>Mass</h6>
+					<div id="vlist">
+							<ul class="list-group">
+								<li class="list-group-item">Theology of the Mass&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/ifOPNf6G6gc?autoplay=1', 'Theology of the Mass');">Load</a></li>
+								<li class="list-group-item">The Bible and the Sacrifice of the Mass&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/0uL_IAJWvX0?autoplay=1','The Bible and the Sacrifice of the Mass');">Load</a></li>
+								<li class="list-group-item">The Real Presence of Christ in the Eucharist&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/bJjW3LXuHzo?autoplay=1','Real Presence of Christ in the Eucharist');">Load</a></li>
+							</ul>	
+					</div>
+					<h6>Prayers</h6>
+					<div id="vlist2">
+							<ul class="list-group">
+								<li class="list-group-item">Stations of the Cross&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/tLGwLMLcq8k?autoplay=1', 'Stations of the Cross');">Load</a></li>
+								<li class="list-group-item">The Chaplet of Divine Mercy&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/p5TGfisOKMM?autoplay=1', 'The Chaplet of Divine Mercy');">Load</a></li>
+								<li class="list-group-item">The Holy Rosary- Joyful Mysteries&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/DPs2JTQiUPQ?autoplay=1', 'The Holy Rosary-Joyful Mysteries');">Load</a></li>
+								<li class="list-group-item">The Holy Rosary- Sorrowful Mysteries&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/zamQyP1nCbY?autoplay=1', 'The Holy Rosary- Sorrowful Mysteries');">Load</a></li>
+								<li class="list-group-item">The Holy Rosary- Glorious Mysteries&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/1ltzSsMO1oY?autoplay=1', 'The Holy Rosary- Glorious Mysteries');">Load</a></li>
+								<li class="list-group-item">The Holy Rosary- Luminous Mysteries&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/RWcAWvVl2gY?autoplay=1', 'The Holy Rosary- Luminous Mysteries');">Load</a></li>
+							</ul>	
+					</div>	
+						
+					<h6>Tamil Catholic Songs</h6>
+					<div id="vlist3" >
+							<ul class="list-group">
+								<li class="list-group-item">Semmariyin&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/7GXLGRN82fY?autoplay=1','Semmariyin tamil catholic song');">Load</a></li>
+								<li class="list-group-item">IRAIVAN AZHAIKINDRAAR&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/FsKm8wN6-3Q?autoplay=1','IRAIVAN AZHAIKINDRAAR');">Load</a></li>
+								<li class="list-group-item">Yaaridam&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/WXjLZVI-oZU?autoplay=1','Yaaridam');">Load</a></li>
+								<li class="list-group-item">Ennil Onraaga&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="loadAndPlay('https://www.youtube.com/embed/92G8z51ut4k?autoplay=1','Ennil onraaga');">Load</a></li>
+							</ul>						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+				<div class="panel-body text-center">
+					<h4>Video Control</h4>
+					<!-- video id="vid" width:"300px;"  height="200px;" controls>
+						<source src="https://youtu.be/7GXLGRN82fY" type="video/mp4">
+					</video -->
+					<iframe id="vid" width="500" height="300" src="https://www.youtube.com/embed/7GXLGRN82fY"></iframe>
+					<p>Playing: {{playSource}}</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+

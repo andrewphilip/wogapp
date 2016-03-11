@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="page-header">
+						<h3>Ecumenical Councils</h3>
+					</div>
+					<div>
+						<ol>
+							<li ng-repeat="c in councils"><a ng-click="loadCouncil(c)">{{c.name}}</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8" id="contentpnl" ng-show="cname">
+			<div class="panel panel-info" >
+				<div class="panel-body">
+					<div class="page-header">
+						<h4>{{cname}}</h4>
+						<p>{{cyear}}</p>
+					</div>
+					<div class="small" ng-bind-html="pnlcdata">
+						
+					</div>
+				</div>
+			</div>
+		
+		
+		</div>
+
+	</div>
+</div>

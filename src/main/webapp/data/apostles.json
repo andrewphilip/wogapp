@@ -1,0 +1,74 @@
+[
+    {
+        "name": "St. Peter",
+        "desc": "A Galilean fisherman, the chief Shepherd of Christ's flock, was chosen by Him to be the Prince of the Apostles, and the Rock upon which He was to build His indestructible Church. ",
+        "symbol": "crossed keys, silver and gold keys signify Saint Peter's divinely-given power of binding and loosing.",
+        "feast": "June 26"
+    },
+    {
+        "name": "St. Andrew",
+        "desc": "A follower of John the Baptist, then of Christ, who led his brother, Saint Peter, to Christ. He preached the Gospel in Asia Minor and then in Greece, where he was crucified. ",
+        "symbol": "transverse cross, it was on this kind of cross that Saint Andrew, brother of Peter, was crucified in Greece.",
+        "feast": "November 30"
+    },
+    {
+        "name": "St. John",
+        "desc": "The Apostle Jesus particularly loved St. John, probably because of his great innocence and purity. It was to the care of this apostle that the crucified Christ entrusted His blessed Mother. ",
+        "symbol": "chalice, an allusion to Christ's words concerning Saint John: 'Of My cup you shall indeed drink.'",
+        "feast": "December 27"
+    },
+    {
+        "name": "St. Philip",
+        "desc": "A Galilean, who is remembered for telling Nathanael that he had found the Messias, and for taking him to Christ. His preaching took him to Phrygia, where he suffered martyrdom. ",
+        "symbol": "latin cross, Saint Philip is pictured carrying the cross of Christ, which was the theme of his preaching.",
+        "feast": "May 3"
+    },
+    {
+        "name": "St. Bartholomew",
+        "desc": "Believed to be the Nathanael whose innocence and simplicity won high praise from the lips of Christ when Philip brought him to our Lord. He suffered and died in Armenia. ",
+        "symbol": "knife, the traditional symbol for Saint Bartholomew it was this instrument which was used to flay him alive.",
+        "feast": "August 24"
+    },
+    {
+        "name": "St. Thomas",
+        "desc": "Famous for his refusal to believe that Christ had risen until he had touched the wounds of His hands and side. Saint Thomas is said to have evangelized parts of Persia and India. ",
+        "symbol": "builder's square, from an ancient story that Saint Thomas built a palace for King Guduphara in India.",
+        "feast": "July 3"
+    },
+    {
+        "name": "St. Mathew",
+        "desc": "Was a wealthy tax collector of Capharnaum when he was called to follow Christ. The first Gospel was written by him. He preached in Ethiopia, where he died a martyr's death. ",
+        "symbol": "ax, Saint Matthew may have been beheaded in Asia for his preaching; hence the symbol of his death.",
+        "feast": "September 21"
+    },
+    {
+        "name": "St. James The Less",
+        "desc": "Was the brother of Saint Jude and a cousin of Jesus. While serving as Jerusalem's first bishop, he was arrested by the Jews and killed by being hurled down from the Temple roof. ",
+        "symbol": "fuller's club, after being cast from the Temple roof Saint James was beaten to death with such a club.",
+        "feast": "May 3"
+    },
+    {
+        "name": "St. Jude",
+        "desc": "A brother of Saint James the Less and a cousin of Jesus, wrote a Catholic Epistle of the New Testament. It is customary with many to pray to him in seemingly 'hopeless' situations. ",
+        "symbol": "halberd, this long-handled and ax-like weapon was used by the Persian executioners of Saint Jude.",
+        "feast": "October 28"
+    },
+    {
+        "name": "St. Simon",
+        "desc": "The brother of James and Jude, who is surnamed the Zealot. He and Saint Jude are said to have preached in Egypt and Persia and to have suffered martrydom for the faith in Mesopotamia. ",
+        "symbol": "saw, usual symbol for Saint Simon, since, according to legend, he was martyred by being sawed into pieces.",
+        "feast": "October 28"
+    },
+    {
+        "name": "St. Matthias",
+        "desc": "Followed Jesus from John's baptism to the Ascension, was chosen to take the place of Judas among the Apostles. Little is known with certainty of his life and martrydom. ",
+        "symbol": "lance, it is an old tradition that Saint Matthias was martyred in southern Asia with such a weapon.",
+        "feast": "May 14"
+    },
+    {
+        "name": "St. James the Greater",
+        "desc": "James is called James the Greater because another younger apostle was named James. (He should not be confused with this James, or the James who is a relative of Jesus, or the James who was an elder of the Church in Jerusalem and heard Peter's defense of baptizing Gentiles.) James is the patron saint of hatmakers, rheumatoid sufferers, and laborers. ",
+        "symbol": "cross of St. James",
+        "feast": "July 25"
+    }
+]

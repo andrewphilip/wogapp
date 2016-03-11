@@ -1,0 +1,29 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="page-header">
+						<h3>List of Popes</h3>
+					</div>
+
+						<table class="table table-bordered table-striped" style="max-height: 600px;max-width: 320px;" fixed-header>
+							<thead>
+								<th>#</th>
+								<th>Name and Period</th>
+							</thead>
+							<tbody>
+								<tr ng-repeat="d in mydata | filter:q">
+									<td>{{$index +1}}</td>
+									<td>{{d}}</td>
+								</tr>
+							</tbody>
+						</table>
+				</div>
+			</div>						
+					
+		</div>
+
+	</div>
+</div>

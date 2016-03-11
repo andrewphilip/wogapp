@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-2">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="page-header">
+						<h3>Early Church Fathers</h3>
+					</div>
+					<div ng-repeat="cf in fathers">
+							<a class="btn btn-primary btn-xs btn-block"  ng-click="loadfather(cf)">{{cf.name}}</a>
+							<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-7" id="contentpnl" ng-show="cfname">
+			<div class="panel panel-info" >
+				<div class="panel-heading">{{cfname}}</div>
+				<div class="panel-body" ng-bind-html="pnlcfdata">
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

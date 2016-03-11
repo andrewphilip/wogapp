@@ -1,0 +1,36 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="page-header">
+						<h3>Daily Readings</h3>
+						<p>(USCCB-Feeds)</p>
+					</div>
+					<div>
+						<ol>
+							<li class="small" ng-repeat="feed in feeds">
+								{{feed.title}}<br>
+								<span class="small">[{{feed.publishedDate}}]</span>
+								<a class="btn btn-primary btn-xs" ng-click="loadCont(feed)">View</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8" id="contentpnl" ng-show="ftitle">
+			<div class="panel panel-info" >
+				<div class="panel-body">
+					<div class="page-header">
+						<h4>{{ftitle}}</h4>
+					</div>
+					<div class="small" ng-bind-html="pnlfcontent">
+					</div>
+				</div>
+			</div>
+		
+		</div>
+
+	</div>
+</div>

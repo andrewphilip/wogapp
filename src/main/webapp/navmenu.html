@@ -1,0 +1,38 @@
+		<div class="navbar navbar-inverse navbar-static-top" >
+			<div class="container">
+				<a href="#" class="navbar-brand">Andew Philip - Site</a>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHdrCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse navHdrCollapse" >
+					<ul class="nav navbar-nav navbar-right">
+						<li><a ng-class="{active: isActive('/home')}" href="#home">Home</a></li>
+						<li><a ng-class="{active: isActive('/prayers')}" href="#prayers">Prayers</a></li>
+						<li><a ng-class="{active: isActive('/saints')}" href="#saints">Saints</a></li>
+						<li><a ng-class="{active: isActive('/bible')}" href="#bible">Bible</a></li>
+						<li class="dropdown">
+							<a  class="dropdown-toggle" data-toggle="dropdown">Media<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a ng-class="{active: isActive('/audio')}" href="#audio">Audio</a></li>
+								<li><a ng-class="{active: isActive('/video')}" href="#video">Video</a></li>
+							</ul>
+
+						</li>
+						<li class="dropdown">
+							<a  class="dropdown-toggle" data-toggle="dropdown" >Resources<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a ng-class="{active: isActive('/teachings')}" href="#teachings">Teachings</a></li>
+								<li><a ng-class="{active: isActive('/councils')}" href="#councils">Ecumenical Councils</a></li>
+								<li><a ng-class="{active: isActive('/cfathers')}" href="#cfathers">Church Fathers</a></li>
+								<li><a ng-class="{active: isActive('/apostles')}" href="#apostles">Apostles</a></li>
+								<li><a ng-class="{active: isActive('/popes')}" href="#popes">List of Popes</a></li>
+								<li><a ng-class="{active: isActive('/faq')}" href="#faq">FAQ</a></li>
+							</ul>
+						</li>
+						<li><a ng-class="{active: isActive('/contact')}" href="#contact" data-toggle="modal" >Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>

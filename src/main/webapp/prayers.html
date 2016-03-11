@@ -1,0 +1,99 @@
+<div class="container">
+	<div class="row">
+	
+			<div class="col-sm-3">
+					<div class="panel-group">
+						<div class="panel panel-default panel-sm">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#cont1">Marian-Prayers</a>
+								</h4>
+							</div>
+							<div id="cont1" class="panel-collapse collapse">
+								<ul class="list-group">
+									<li class="list-group-item" ng-repeat="m in marian" ng-click="getContent(m)">{{m.title}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel-group" >
+						<div class="panel panel-default panel-sm">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#cont2">Prayers</a>
+								</h4>
+							</div>
+							<div id="cont2" class="panel-collapse collapse">
+								<ul class="list-group">
+									<li class="list-group-item" ng-repeat="m in mydata" ng-click="getContent(m)">{{m.title}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+			</div>
+
+			<div class="col-sm-6" ng-show="title">
+					<div class="panel-group">
+						<div class="panel panel-default panel-sm">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									{{title}}
+								</h4>
+							</div>
+							<div id="cont2" ng-bind-html="prayer">
+								
+							</div>
+						</div>
+					</div>
+			</div>
+
+	
+	
+		<div class="col-md-3  pull-right" >
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="page-header">
+						<h3>Latin Prayers</h3>
+					</div>
+					<dl><dt>Pater Noster</dt>
+						<dd>Pater noster qui es in coelis,
+						sanctificetur nomen tuum;
+						adveniat regnum tuum,
+						fiat voluntas tua,
+						sicut  in coelo et in terra.
+						Panem nostrum quotidianum da nobis hodie,
+						et dimitte nobis debita nostra,
+						sicut et nos dimittimus debitoribus nostris.
+						et ne nos inducas in tentationem
+						sed libera nos a malo.
+						</dd>
+						</dl>
+					<dl><dt>Ave Maria</dt>
+						<dd>Ave Maria, gratia plena, Dominus tecum.
+						Benedicta tu in mulieribus, et benedictus fructus ventris tui, Jesus.
+						Sancta Maria, Mater Dei, ora pro nobis peccatoribus,
+						nunc et in hora mortis nostrae. Amen.</dd>
+					</dl>
+					<dl><dt>Gloria Patri</dt>
+						<dd>Gloria Patri
+						et Filio
+						et Spiritui Sancto.
+						Sicut erat in principio,
+						et nunc et semper
+						et in secula seculorum. Amen.</dd>
+					</dl>
+					<dl><dt>The Sanctus</dt>
+						<dd>Sanctus, Sanctus, Sanctus, Dominus Deus Sabaoth. Pleni sunt 
+						caeli et terra gloria tua. Hosanna in excelsis. Benedictus qui venit in 
+						nomine Domini. Hosanna in excelsis.
+						</dd>
+					</dl>
+					
+				</div>
+			</div>
+		</div>
+
+	</div> <!-- row -->
+</div>

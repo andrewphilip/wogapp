@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h4>List of Songs</h4>
+					<div id="vlist">
+						<ul>
+							<li>Pange Lingua&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="playSong('media/Pange_Lingua_Gloriosi.mp3','Pange Lingua');">Play</a></li>
+							<li>O Salutaris and Tantum Ergo&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="playSong('media/O_Salutaris_Hostia_Tantum_Ergo.mp3','O Salutaris and Tantum ergo');">Play</a></li>
+							<li>Soul Of My Savior&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="playSong('media/Soul_Of_My_Savior.mp3','Soul Of My Savior');">Play</a></li>
+							<li>One Bread, One Body&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="playSong('media/One_Bread_One_Body.mp3','One Bread, One Body');">Play</a></li>
+							<li>Here I Am Lord&nbsp;&nbsp;<a class="btn btn-info btn-xs" ng-click="playSong('media/HereIAmLord.mp3','Here I Am Lord');">Play</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h4>Audio Control</h4>
+					<audio controls id="auid" src="media/Pange_Lingua_Gloriosi.mp3" >
+						Your browser does not support the audio element.
+					</audio>
+					<p>Playing: {{playSource}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
